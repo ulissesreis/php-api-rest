@@ -1,0 +1,6 @@
+# Turn rewrite engine on
+Options +FollowSymlinks
+RewriteEngine on
+#comum
+RewriteRule ^estados/([A-Za-z]+)/?$   estados.php?pais=$1 [nc,qsa]
+RewriteRule ^estados/?$   estados.php [nc,qsa]
